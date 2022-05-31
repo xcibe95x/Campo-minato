@@ -1,10 +1,32 @@
 * { box-sizing: border-box; padding: 0; margin: 0; font-family: 'Roboto', sans-serif;}
 
 header {
-    padding: 1rem;
+    padding: 5rem;
     margin-bottom: 3rem;
     background-color: #fff;
     text-align: center;
+    background-image: url("./img/doom-banner.webp");
+    background-size: 100% 180%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid rgb(164, 1, 1);
+}
+
+.selector {
+    background: orangered;
+    width: 20%;
+    height: 50px;
+    margin: 14px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+button, select {
+    padding: 5px;
 }
 
 body {
@@ -13,6 +35,7 @@ body {
 
 .field h2 {
     text-align: center;
+    color: orangered;
 }
 
 
@@ -43,8 +66,9 @@ body {
 }
 
 .red {
-    background-image: url("https://preview.redd.it/wv4wwga64hf51.jpg?auto=webp&s=4b8f25a9fd373fe800e76f3a5914dee0810a44fd");
+    background-image: url("./img/doom-demon.png");
     background-size: cover;
+    background-color: orangered;
 }
 
 .green {

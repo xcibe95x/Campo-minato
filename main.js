@@ -9,6 +9,7 @@
 const setButton = document.getElementById("set-difficulty");
 const userinput = document.getElementById("difficulty");
 const gameField = document.querySelector(".field");
+let tries = 20;
 
 function createGrid (cell) {
     const node = document.createElement("div");
@@ -78,5 +79,15 @@ function cellClick(element, square) {
     } else {
         square.classList.add("red");
         element.style.display = "none";
+        tries--;
+        triesListener(element, square);
+    }
+}
+
+function triesListener () {
+    document.getElementById('tries').innerText = tries;
+    if (tries <= 0) {
+        alert("You lose.");
+        location.reload(); 
     }
 }
